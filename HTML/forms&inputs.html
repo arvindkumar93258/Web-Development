@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and input in html</title>
+</head>
+
+<body>
+
+    <!-- Form tutorial  -->
+
+    <h3>HTML form</h3>
+
+    <form action="backend/server.js">
+        <label for="myName">Name : </label>
+        <div>
+             <input type="text" name="muName">
+        </div>
+        <br>
+        <div>
+            Role : <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Salary : <input type="number" name="mySalary">
+        </div>
+        <br>
+        <div>
+            Email : <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date : <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Eligibility : <input type="checkbox" name="myEligibility">
+        </div>
+
+        <br>
+        <div>
+            Gender : Male <input type="radio" name="myGender" id="Male"> Female <input type="radio" name="myGender"
+                id="Male">
+            Other <input type="radio" name="myGender" id="Male">
+        </div>
+        <br>
+
+        <div>
+            Write about yourself : <textarea name="myText" id="textId" cols="60" rows="10"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <label for="car">Car : </label>
+            <select name="car"  id="car">
+                <option value="Indica">Indica</option>
+                <option value="Swift" selected>Swift</option>
+                <option value="Tata" >Tata</option>
+            </select>
+           
+        </div>
+
+
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+        </div>
+        <br>
+        <div>
+            Reset : <input type="reset" name="Reset" id="">
+        </div>
+        <br>
+    </form>
+
+
+</body>
+
+</html>

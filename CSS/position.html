@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property in CSS</title>
+
+    <style>
+        /* position property in css : static(by default), absolute, relative, fixed and sticky */
+
+        .container {
+            border: 4px solid blue;
+            background-color: azure;
+            height: 4000px;
+        }
+
+        .box {
+            border: 3px solid blue;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+        }
+
+
+        #box3 {
+            /* position: An element with the absolute position will move according to the position of its parent element.
+            position: absolute;
+            top: 20px;
+            left: 20px; */
+
+            /* position: relative means it will take place from it's normal place in the browser;
+            position: relative;
+            top: 40px;
+            left: 100px; */
+
+
+            /* position: fixed is made when you have chat like application and you want to fixed the postion of button or text or image on the screen/browaser;
+            position: fixed;
+            right: 4px;
+            bottom: 4px; */
+
+
+            /* position: sticky is used when we need navigation menu and that should be sticky when we scroll the screen; */
+            position: sticky;
+            top: 2px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+
+    </div>
+
+</body>
+
+</html>

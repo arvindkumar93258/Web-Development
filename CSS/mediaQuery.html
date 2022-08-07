@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query in CSS</title>
+
+    <style>
+        .box{
+            font-size: 70px;
+            text-align: center;
+            color: black;
+            background-color: aqua;
+            display: none;
+        }
+
+        @media (max-width:400px){
+            #box-1{
+                display: block;
+            }
+        }
+        @media (max-width:800px) and (min-width: 400px){
+            #box-2{
+                color: white;
+                background-color: black;
+                display: block;
+            }
+        }
+        @media (max-width:1200px) and (min-width: 801px){
+            #box-3{
+                color: blue;
+                background-color: aliceblue;
+                display: block;
+            }
+        }
+        @media (min-width:1201px){
+            #box-4{
+                color: red;
+                border-color: aquamarine;
+                display: block;
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+
+    <div class="box" id="box-1">Mai ek phone hu</div>
+    <div class="box" id="box-2">Mai ek Tablet hu</div>
+    <div class="box" id="box-3">Mai ek laptop hu</div>
+    <div class="box" id="box-4">Mai ek wide-screen hu</div>
+</body>
+</html>

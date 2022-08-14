@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+
+    <style>
+        .container {
+            /* display: flex; */
+            background-color: blue;
+        }
+
+        .box {
+            color: black;
+            background-color: aqua;
+            position: relative;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+
+            animation-name: arvind2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            
+            animation-direction: alternate-reverse;
+
+            /* animation-fill-mode:backwards; */
+            /* animation-timing-function: ease-in; */
+            /* animation-delay: 1s; */
+            /* animation-direction: reverse; */
+
+
+        }
+
+
+        @keyframes arvind2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+        @keyframes arvind {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1200px;
+                height: 1200px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h2>Box-1</h2>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

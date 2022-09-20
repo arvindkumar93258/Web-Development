@@ -35,10 +35,10 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    
+
     top: 0px;
     left: 0px;
-    
+
     opacity: 0.5;
 }
 
@@ -163,7 +163,7 @@
 
 }
 
-#services .box img{
+#services .box img {
     align-items: center;
     width: 160px;
     height: 150px;
@@ -173,12 +173,12 @@
 
 /* Client Section  */
 
-#clientSection{
+#clientSection {
     height: 260px;
 
 }
 
-#clientSection::before{
+#clientSection::before {
     content: "";
     position: absolute;
     background: url('../img/client-section-image.jpg') no-repeat center center/cover;
@@ -188,7 +188,7 @@
     opacity: 0.5;
 }
 
-#clients{
+#clients {
     display: flex;
     /* border: 2px solid red; */
 
@@ -196,18 +196,17 @@
     align-items: center;
 }
 
-.clientItem
-{
+.clientItem {
     margin: 10px;
     padding: 5px;
 }
 
-#clients img{
+#clients img {
     width: 120px;
     height: 110px;
 }
 
-.clientBox{
+.clientBox {
     margin: 10px;
     padding: 5px;
 }
@@ -215,25 +214,25 @@
 
 
 /* Contact section  */
-#contact{
+#contact {
     height: 450px;
     margin: 30px 10px;
 }
 
-#contact::before{
+#contact::before {
     content: "";
     background: url('../img/back-img.jpg') no-repeat center center/cover;
-    
+
     position: absolute;
     width: 100%;
     height: 450px;
-    
+
     z-index: -1;
     opacity: 0.5;
 }
 
 
-#contact-box-form{
+#contact-box-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,7 +241,7 @@
 }
 
 #contact-box-form input,
-#contact-box-form label{
+#contact-box-form label {
     width: 100%;
     padding: 0.2rem;
     font-size: 1.2rem;
@@ -252,12 +251,12 @@
     margin: 2px;
 }
 
-#contact-box-form input{
+#contact-box-form input {
     border-radius: 16px;
     background-color: #c8e2daab;
 }
 
-#contact-box-form textarea{
+#contact-box-form textarea {
     border-radius: 16px;
     background-color: #9ea2e9ab;
     color: black;
@@ -266,17 +265,38 @@
     padding: 5px 10px;
 }
 
+#formSubmit-button {
+    width: 120px;
+    align-items: center;
+
+
+}
+
+#forRadioButtons {
+    display: flex;
+    border: 0px solid black;
+    border-radius: 20px;
+    background-color: #c8e2daab;
+
+}
+
+input[type='radio'] {
+    transform: scale(0.50);
+}
+
+
 
 
 
 
 /* Footer section  */
-footer{
+footer {
     padding: 10px 20px;
     margin: 20px;
     color: white;
     background-color: black;
 }
+
 
 
 

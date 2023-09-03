@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors in css</title>
+    <style>
+      body {
+        color: white;
+        background-color: black;
+      }
+      div li p {
+        background-color: green;
+      }
+      div p {
+        background-color: red;
+      }
+      /* if you want to selecr direct p to dic */
+      div > p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>This is more on selectors</h3>
+
+    <div class="container">
+      <li>
+        <p>this is inside div->li->p</p>
+      </li>
+      <div class="row">
+        <p>this is a properties</p>
+      </div>
+      <p>this is a statement</p>
+      <li>
+        <p>this is inside direct div</p>
+      </li>
+    </div>
+    <p>this is out of p</p>
+  </body>
+</html>

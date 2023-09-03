@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive design</title>
+    <style>
+      html {
+        font-size: 25px;
+      }
+      body {
+        background-color: rgb(0, 0, 0);
+        color: white;
+      }
+      .container {
+        text-align: center;
+        font-size: 10px;
+        border: 2px solid wheat;
+        width: 100vw;
+        height: 75vw;
+      }
+      #item1 {
+        font-size: 3em;
+        /* padding will be calculated = (container fontsize)*(element fontsize) */
+        padding: 3em;
+      }
+      #item2 {
+        font-size: 5em;
+      }
+
+      /* view port --> vh and vw */
+      #item2 {
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Responsive design tutorial</h3>
+
+    <div class="container">
+      <h1 id="item1">This is first heading</h1>
+      <h1 id="item2">This is second heading</h1>
+      <h3 id="item3">This is third heading</h3>
+    </div>
+  </body>
+</html>

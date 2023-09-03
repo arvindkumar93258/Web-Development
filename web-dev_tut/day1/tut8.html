@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tut-8</title>
+  </head>
+  <body>
+    <h3>Tut-8 Forms</h3>
+
+    <form action="index.js">
+      <div>
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          placeholder="Enter your name"
+          name="myName"
+          id="name"
+        />
+      </div>
+      <div>
+        Branch:
+        <input type="text" placeholder="Enter your branch" name="myBranch" />
+      </div>
+      <div>
+        Email:
+        <input type="email" placeholder="Enter your email" name="myBranch" />
+      </div>
+      <div>DOB: <input type="date" name="myDate" id="" /></div>
+
+      <div>
+        Are you eligible? :
+        <input type="checkbox" name="myEligibility" checked />
+      </div>
+      <div>Bonus: <input type="number" name="myBonus" id="" /></div>
+      <div>
+        Gender? : Male <input type="radio" name="myGenderr" /> Female
+        <input type="radio" name="myGenderr" />
+        Other <input type="radio" name="myGenderr" />
+      </div>
+
+      <div>
+        <label for="car">Car: </label>
+        <select name="mySelectedCar" id="car">
+          <option value="Indica">Indica</option>
+          <option value="Swift" selected>Swift</option>
+        </select>
+      </div>
+      <div>
+        Write About Us: <br />
+        <textarea name="myAboutUs" id="" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Submit Now" />
+      </div>
+    </form>
+  </body>
+</html>

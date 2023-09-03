@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position in class</title>
+    <style>
+      .box {
+        border: 2px solid red;
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        margin: 2px 2px;
+      }
+      .container {
+        border: 2px solid black;
+        height: 4000px;
+        box-sizing: border-box;
+      }
+      #box3 {
+        /* position: relative; means it will move from it's normal position and will leave a gap */
+        /* position: relative; */
+
+        /* absolute: means it will move from it's normal position to it's first parent */
+        /* position: absolute;
+        top: 30px;
+        left: 50px; */
+
+        position: fixed;
+        right: 15px;
+        bottom: 5px;
+      }
+
+      #box1 {
+        /* position: relative; */
+      }
+      #box2 {
+        /*  */
+        position: sticky;
+        top: 3px;
+      }
+      #box4 {
+        /* position: fixed; */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h3>Position absolute, relative, static(default), fixed and sticky</h3>
+    </header>
+
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3 Chat with US</div>
+      <div class="box" id="box4">4</div>
+    </div>
+  </body>
+</html>

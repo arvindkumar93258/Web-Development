@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spanning Multiple Rows and Column</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 7rem;
+        grid-row-gap: 1rem;
+      }
+      .box {
+        border: wps solid red;
+        background-color: rgb(51, 25, 75);
+        margin: 5px 10px;
+        padding: 10px 10px;
+      }
+      .box:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+        grid-row: 1 / span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Item-1</div>
+      <div class="box">Item-1</div>
+      <div class="box">Item-1</div>
+      <div class="box">Item-1</div>
+      <div class="box">Item-1</div>
+      <div class="box">Item-1</div>
+      <div class="box">Item-1</div>
+      <div class="box">Item-1</div>
+      <div class="box">Item-1</div>
+      <div class="box">Item-1</div>
+    </div>
+  </body>
+</html>

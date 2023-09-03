@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: black;
+        color: white;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background-color: rgb(0, 56, 36);
+        /* border: 0.1px solid green; */
+        width: 80vh;
+        border-radius: 20px;
+        box-shadow: 10px 10px 100px rgb(255, 0, 0);
+      }
+      .formClass {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 10px;
+        padding: 10px 10px;
+      }
+      form input[type="text"] {
+        /* display: block; */
+        margin: 5px 10px;
+        padding: 5px 10px;
+        border: 1px black;
+        border-radius: 5px;
+        width: 250px;
+      }
+      form input[type="email"] {
+        /* display: block; */
+        margin: 5px 10px;
+        padding: 5px 10px;
+        border: 1px black;
+        border-radius: 5px;
+        width: 250px;
+      }
+      form input[type="date"] {
+        /* display: block; */
+        margin: 5px 10px;
+        padding: 5px 10px;
+        border: 1px black;
+        border-radius: 5px;
+        width: 250px;
+      }
+
+      form input[type="select"] {
+        margin: 5px 10px;
+        padding: 5px 10px;
+      }
+      form label {
+        margin: 5px 5px;
+        padding: 2px 5px;
+      }
+      .blockItem {
+        display: block;
+      }
+      .radioCheckClass {
+        margin-left: 18px;
+      }
+      .selectBox {
+        margin-left: 15px;
+        padding: 5px 6px;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+      }
+      .btnClass {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btnClass button {
+        width: 40vh;
+        color: blue;
+        background-color: rgb(255, 255, 255);
+        font-weight: bold;
+        border-radius: 5px;
+        margin: 10px 5px;
+        padding: 3px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Survey Form</h1>
+    </header>
+    <section>
+      <div class="container">
+        <form action="#" class="formClass">
+          <div class="box">
+            <label class="blockItem" for="name">Name</label>
+            <input
+              class="blockItem"
+              type="text"
+              placeholder="Enter your name"
+              id="myname"
+            />
+          </div>
+          <div class="box">
+            <label class="blockItem" for="email">Email</label>
+            <input
+              class="blockItem"
+              type="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="box">
+            <label class="blockItem" for="name">DOB</label>
+            <input
+              class="blockItem"
+              type="date"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="box">
+            <label class="blockItem" for="type"
+              >Which option dscribes you best?</label
+            >
+            <select class="selectBox" name="typeOfStudent" id="typeOfStudent">
+              <option value="student" selected>Student</option>
+              <option value="working">Working Professional</option>
+              <option value="noworking">Not working</option>
+            </select>
+          </div>
+          <div class="box">
+            <label for="name" class="blockItem"
+              >Would you recomment GFG to your friends?</label
+            >
+            <div class="radioCheckClass">
+              <input
+                type="radio"
+                name="recommendation"
+                value="yes"
+                id="recomment"
+              />
+              <label for="recommentyes" name="recommendation">Yes</label>
+            </div>
+            <div class="radioCheckClass">
+              <input
+                type="radio"
+                value="no"
+                id="recomment"
+                name="recommendation"
+              />
+              <label for="recommendation">No</label>
+            </div>
+            <div class="radioCheckClass">
+              <input
+                type="radio"
+                value="maybe"
+                id="recomment"
+                name="recommendation"
+              />
+              <label for="recommendation">Maybe</label>
+            </div>
+          </div>
+
+          <div class="box">
+            <label for="name" class="blockItem"
+              >Language or Frameworks known to you (You may select
+              multiple)</label
+            >
+            <div class="radioCheckClass">
+              <input type="checkbox" name="techStack" />
+              <label for="techStack">C</label>
+            </div>
+            <div class="radioCheckClass">
+              <input type="checkbox" name="techStack" />
+              <label for="techStack">C++</label>
+            </div>
+            <div class="radioCheckClass">
+              <input type="checkbox" name="techStack" />
+              <label for="techStack">java</label>
+            </div>
+            <div class="radioCheckClass">
+              <input type="checkbox" name="techStack" />
+              <label for="techStack">C#</label>
+            </div>
+            <div class="radioCheckClass">
+              <input type="checkbox" name="techStack" />
+              <label for="techStack">NodeJs</label>
+            </div>
+            <div class="radioCheckClass">
+              <input type="checkbox" name="techStack" />
+              <label for="techStack">ReactJs</label>
+            </div>
+            <div class="radioCheckClass">
+              <input type="checkbox" name="techStack" />
+              <label for="techStack">Angular</label>
+            </div>
+            <div class="radioCheckClass">
+              <input type="checkbox" name="techStack" />
+              <label for="techStack">Java-SpringBoot</label>
+            </div>
+            <div class="radioCheckClass">
+              <input type="checkbox" name="techStack" />
+              <label for="techStack">C#-DotNet</label>
+            </div>
+          </div>
+          <div>
+            <label class="blockItem" for="">Any comments or suggestion </label>
+            <input class="blockItem" type="text" />
+          </div>
+          <div class="btnClass">
+            <button id="myBtn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      let myName = document.getElementById("myname");
+      let myBtn = document.getElementById("myBtn");
+      console.log(myBtn);
+      //
+      myName.addEventListener("chenge", function (e) {
+        console.log("name: ", e.target.value);
+      });
+
+      function btnHandler() {}
+
+      myBtn.addEventListener("click", btnHandler);
+    </script>
+  </body>
+</html>

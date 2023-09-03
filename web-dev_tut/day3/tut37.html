@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS transition</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .container {
+        display: flex;
+      }
+      #box {
+        display: flex;
+        width: 400px;
+        height: 200px;
+        padding: 10px 20px;
+        border: 2px solid red;
+        background-color: rgb(29, 58, 48);
+        justify-content: center;
+        align-items: center;
+
+        /* transition-property: background-color;
+        transition-duration: 4s;
+        transition-timing-function: ease;
+        transition-delay: 2s; */
+
+        /* short-hand peoperty for the above things
+        transition: proprty-name transition-duration ease-in delay */
+        transition: all 1s ease-in 0.1s;
+
+        /* transition property can be set only to the non-binary things */
+      }
+      #box:hover {
+        background-color: rgb(230, 18, 18);
+        color: black;
+        width: 1000px;
+        height: 600px;
+        border-radius: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>CSS Transition tutorial-37</h3>
+
+    <div class="container">
+      <div id="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, natus?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

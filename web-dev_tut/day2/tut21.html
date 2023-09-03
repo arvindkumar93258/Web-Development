@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float&Clear</title>
+
+    <style>
+      .container {
+        border: 3px solid red;
+
+        /* margin: 30px auto; */
+
+        box-sizing: border-box;
+      }
+      .container2 {
+        border: 3px solid black;
+        padding: 10px 10px;
+      }
+      #fruits {
+        float: left;
+
+        width: 44%;
+      }
+      #stationary {
+        float: right;
+        width: 44%;
+      }
+      #computer {
+        float: left;
+        width: 100%;
+        clear: both; /* left -> no left element allowed to float above it and similarly for right */
+      }
+
+      #glasses {
+        float: left;
+        width: 100%;
+      }
+      p,
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Float and Clear</h3>
+
+    <div class="container">
+      <h3>Welcome to My Store</h3>
+      <div class="container2" id="fruits">
+        <h3>fruits</h3>
+        <p>
+          Lorem ipsum dres. Lore amet,elit. Itaque quis, facere recusandae
+          veritatis at voluptate! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Soluta molestiae iusto dolorum repellendus enim non,
+          similique error libero. Accusamus aspernatur iure deserunt perferendis
+          nemo doloribus excepturi reiciendis enim blanditiis, saepe incidunt
+          labore voluptatem quis.
+        </p>
+      </div>
+      <div class="container2" id="stationary">
+        <h3>Stationary</h3>
+        <p>
+          Lorem, Lorem lore34 Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Reprehenderit perferendis quae fugiat! Iure odit
+          corrupti id eligendi? Veniam, non omnis temporibus et assumenda harum
+          maxime modi, quisquam quas voluptatibus culpa dolorem hic deserunt
+          nisi. ipsum dolor sit amet consectetur adipisicing elit. Officia neque
+          aut quisquam obcaecati veniam! Perferendis assumenda accusantium ullam
+          obcaecati debitis magnam. Quisquam itaque placeat rem, aliquid
+          quibusdam, iusto sequi vero repudiandae fugit, molestiae minima.
+          ipstatibus saepe voluptates dolores dolore, labore qui, illo quisquam
+          dignissimos facilis officiis ad quibusdam est expedita.
+        </p>
+      </div>
+      <div class="container2" id="computer">
+        <h3>Computer</h3>
+        <p>
+          LorvoluptatesLorvoluptatesLorvoluptatesLorvoluptates. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Voluptas impedit nostrum
+          at nemo qui laboriosam iure nisi id, aliquid voluptatem possimus
+          quisquam. Dolor voluptatem tenetur officiis earum magnam? Quas nostrum
+          cupiditate nobis rerum tenetur.
+        </p>
+      </div>
+
+      <div class="container2" id="glasses">
+        <h3>Glasses</h3>
+        <p>
+          Lnt, molestiae dolor libero animi quasi dignissimos harum illum?
+          Expedita.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

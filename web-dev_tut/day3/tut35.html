@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables and custom properties</title>
+    <style>
+      :root {
+        --priamry-color: rgb(46, 78, 68);
+        --secondary-color: rgb(97, 255, 205);
+      }
+      body {
+        color: white;
+        background-color: black;
+      }
+
+      .container {
+        display: flex;
+        align-items: center ;
+      }
+      .box {
+        background-color: var(--priamry-color);
+        /* background-color: rgb(46, 78, 68); */
+
+        border: 2px solid white;
+        margin: 2px 10px;
+        padding: 2px 10px;
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Variables and cutstom properties</h1>
+
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+  </body>
+</html>

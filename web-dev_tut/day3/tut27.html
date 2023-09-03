@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility and z-index</title>
+    <style>
+      .box {
+        height: 150px;
+        width: 150px;
+        border: 2px solid rgb(0, 255, 21);
+      }
+      #box1 {
+        background-color: black;
+        position: relative;
+        top: 10px;
+        z-index: 34;
+      }
+      #box2 {
+        /* element will be hide but it will show it's space occupied by this element */
+        /* visibility: hidden; */
+
+        /* display: none; it will hide along with place will be vecant */
+        /* display: none; */
+
+        /* z-index: will work only for relative, absolute, fixed and sticky; */
+        position: relative;
+        top: -34px;
+        /* higher z-inde will appear above on the element having less z-index; */
+        z-index: 35;
+
+        background-color: red;
+      }
+      #box3 {
+        background-color: yellow;
+      }
+      #box4 {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Visibility Index</h3>
+
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+  </body>
+</html>

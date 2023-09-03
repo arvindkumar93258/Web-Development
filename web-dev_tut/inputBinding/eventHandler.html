@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Let us Understand Inputs</h3>
+
+    <input id="input1" />
+    <input id="input2" />
+    <button id="button">Submit</button>
+    <h4 id="myName"></h4>
+    <script>
+      let val1 = "",
+        val2 = "";
+
+      let input1 = document.getElementById("input1");
+      let input2 = document.getElementById("input2");
+      let myBtn = document.getElementById("button");
+      let myName = document.getElementById("myName");
+
+      function input1ChangeHandler(e) {
+        val1 = e.target.value;
+      }
+
+      function input2ChangeHandler(e) {
+        val2 = e.target.value;
+      }
+
+      function buttonClickHandler() {
+        let name = val1 + val2;
+        myName.innerText = name;
+      }
+
+      input1.addEventListener("change", input1ChangeHandler);
+      input2.addEventListener("change", input2ChangeHandler);
+      myBtn.addEventListener("click", buttonClickHandler);
+    </script>
+  </body>
+</html>

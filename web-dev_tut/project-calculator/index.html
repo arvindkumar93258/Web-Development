@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        color: white;
+        font-size: 22px;
+      }
+      header h1 {
+        margin: 5px 23px;
+        padding: 5px 23px;
+        text-align: center;
+      }
+      input {
+        border: 2px solid green;
+        border-radius: 5px;
+        width: 80px;
+        height: 80px;
+        margin: 2px 2px;
+      }
+      input[type="text"] {
+        padding: 5px 10px;
+        border: 2px solid red;
+        font-size: 24px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        border: 2px solid black;
+        width: 230px;
+        height: 65px;
+      }
+    </style>
+    <script>
+      function buttonClick(value, id) {
+        console.log(value);
+        document.body.style.background = red;
+      }
+    </script>
+  </head>
+  <body>
+    <header><h1>Calculator</h1></header>
+    <div class="btnClass">
+      <table id="calc">
+        <tr>
+          <td colspan="3">
+            <input type="text" id="result" />
+          </td>
+          <td><input type="button" value="CE" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="button"
+              value="9"
+              id="num9"
+              onclick="buttonClick(value, id)"
+            />
+          </td>
+          <td>
+            <input type="button" value="8" onclick="buttonClick(value)" />
+          </td>
+          <td>
+            <input type="button" value="7" onclick="buttonClick(value)" />
+          </td>
+          <td>
+            <input type="button" value="/" onclick="buttonClick(value)" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="6" onclick="buttonClick(value)" />
+          </td>
+          <td>
+            <input
+              type="button"
+              value="5"
+              onclick="buttonClick(value)"
+              onclick="buttonClick(value)"
+            />
+          </td>
+          <td>
+            <input type="button" value="4" onclick="buttonClick(value)" />
+          </td>
+          <td><input type="button" value="x" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="3" onclick="buttonClick(value)" />
+          </td>
+          <td>
+            <input type="button" value="2" onclick="buttonClick(value)" />
+          </td>
+          <td>
+            <input type="button" value="1" onclick="buttonClick(value)" />
+          </td>
+          <td><input type="button" value="+" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="." onclick="buttonClick(value)" />
+          </td>
+          <td>
+            <input type="button" value="0" onclick="buttonClick(value)" />
+          </td>
+          <td><input type="button" value="=" /></td>
+          <td><input type="button" value="-" /></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

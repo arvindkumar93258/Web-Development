@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Property in CSS</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .container {
+        background-color: rgb(102, 43, 43);
+        border: 2px solid green;
+        height: 50vh;
+        width: 50vw;
+        padding: 100px 100px;
+      }
+      .box {
+        border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        padding: 10px 20px;
+
+        /* transform: rotate(45deg); */
+        transition: all 0.9s ease-in;
+      }
+      .box:hover {
+        /* transform: skew(45deg); */
+        /* transform: scale(1.5); */
+
+        transform: translate(123px, 123px);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Transform property in CSS</h3>
+
+    <div class="container">
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae,
+          consequatur?
+        </p>
+      </div>
+      <!-- <div class="box">
+
+      </div> -->
+    </div>
+  </body>
+</html>

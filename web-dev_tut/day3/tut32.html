@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors on input</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      input[type="text"] {
+        background-color: yellow;
+      }
+      input[type="email"] {
+        background-color: red;
+        color: white;
+      }
+
+      /* n-th child selectors  */
+      li:nth-child(3) {
+        color: blue;
+      }
+      li:nth-child(2n + 0) {
+        background-color: red;
+      }
+      li:nth-child(2n + 1) {
+        background-color: yellow;
+      }
+      .itemClass {
+        display: flex;
+      }
+      .itemClass li {
+        text-decoration: none;
+        list-style-type: none;
+        margin: 8px 8px;
+        padding: 2px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="https://google.com">Go to google</a></h1>
+    <h2><a href="https://facebook.com">Go to Facebook </a></h2>
+
+    <div class="formInput">
+      <input type="text" placeholder="Enter your name" />
+      <input type="email" placeholder="Enter your email" />
+      <input type="password" placeholder="enter your password" />
+
+      <button>Submit</button>
+
+      <ul class="itemClass">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <li>item6</li>
+        <li>item7</li>
+        <li>item8</li>
+        <li>item9</li>
+        <li>item10</li>
+      </ul>
+    </div>
+  </body>
+</html>

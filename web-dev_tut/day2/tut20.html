@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      * {
+        background-color: #d4eef0;
+        /* background-image: url("../flower.jfif"); */
+        border-image-repeat: no-repeat;
+      }
+      .container {
+        border: 2px solid red;
+
+        /* padding  */
+        padding: 10px 10px 15px 20px; /* top, right, bottom, left
+        /* If you are giving only two values then it will take y and x */
+        /* padding: 10px 20px; */
+        border-radius: 15px;
+
+        /* margin  */
+        margin: 10px 10px 10px 10px; /* top, right, bottom, left */
+
+        width: 450px;
+        /* If you give fix width and then if you increase the x padding then it will also increase the width of the box(because actual width of any box = margin + padding + width(assigned)),
+        if you want to stop this then you may use box-sizing  */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Box Model, Margin, Padding</h3>
+
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa illum
+      debitis consequatur repellat libero enim. At illum modi dolores? Tenetur
+      suscipit eligendi eius quasi, eum magni deserunt officiis id neque illo ex
+      mollitia aliquam!
+    </div>
+    <div class="container">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi alias ipsa
+      quas quos voluptatibus unde fugit magnam aperiam, velit deserunt excepturi
+      commodi totam autem laudantium consectetur cum perspiciatis inventore
+      ducimus impedit, recusandae nemo eaque.
+    </div>
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores est
+      laboriosam modi ex aut, nobis corporis reprehenderit sint deserunt aliquam
+      ipsam maxime id labore tenetur placeat unde similique totam non corrupti
+      officia voluptatibus sed.
+    </div>
+  </body>
+</html>
